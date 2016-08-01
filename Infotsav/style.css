@@ -1292,14 +1292,17 @@ nav li.last a:hover {
 
 #lightbox .inner.services {
 	padding: 0;
+	max-height: 600px;
+	overflow-y: scroll;
+	width: 884px;
 }
 
-#lightbox .services section {
+/*#lightbox .services section {
 	float: left;
 	width: 50%;
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 #lightbox .box {
 	position: relative;
@@ -1329,6 +1332,58 @@ nav li.last a:hover {
 
 #lightbox .services ul:last-child {
 	padding-bottom: 30px;
+}
+
+#lightbox .services section
+{
+	width: 50%;
+	margin: 20px 20px;
+	font-size: 14px;
+	line-height: 24px;
+	text-shadow: rgba(0,0,0,0.65) 2px 2px; 
+	max-height: inherit;
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+#lightbox .services section h4
+{
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+.services::webkit-scrollbar
+{
+	width: 20px;
+	border-radius: 5px;
+	opacity: 0.65;
+}
+
+#lightbox .services section.left
+{
+	float: left;
+	clear: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#lightbox .services section.right
+{
+	float: right;
+	clear: right;
+	width: 45%;
+}
+
+#lightbox .services section img
+{
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	display: block;
+	box-shadow: rgba(0,0,0,.65) 5px 2px 5px 3px;
 }
 
 #lightbox .box .icon {

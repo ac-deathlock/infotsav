@@ -15,7 +15,8 @@
 
   <!-- Scripts -->
   <script src="scripts/jquery-1.6.3.min.js" type="text/javascript"></script>
-  <script src="scripts/jquery.spritely-0.6.js" type="text/javascript"></script>  
+  <script src="scripts/jquery.spritely-0.6.js" type="text/javascript"></script>
+  <script src="scripts/jquery.nicescroll.js"></script>  
   <script src="scripts/data.js" type="text/javascript"></script>  
   <script src="scripts/game.js" type="text/javascript"></script>
   <!--[if lt IE 9]>
@@ -23,6 +24,15 @@
 			window.location = 'ie.html';
 		</script>
 	<![endif]-->
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("html").niceScroll();
+		});
+		$(document).ready(function(){
+			$("#lightbox").niceScroll();
+		});
+	</script>
 	<script type="text/javascript">	
 		$(document).ready(function(){
 			$('#innerLoading .me').sprite({fps: 12, no_of_frames: 4}).spState(1);
@@ -127,7 +137,7 @@
 		<div id="aboutHouse" class="house">
 			<div class="door"></div>
 			<div class="lightbox">
-				<div class="inner services">
+				<div class="inner services">  <!--Change the services class to something else -->
 					<h2>EVENTS</h2>
 					<section>
 						<div class="box clearfix">
@@ -169,52 +179,43 @@
 			<div class="door"></div>
 			<div class="lightbox">
 				<div class="inner services">
-					<h2>Services & Skills</h2>
-					<section>
-						<h3>Things that I do</h3>
-						<div id="sWebsites" class="box clearfix">
-							<div class="icon"></div>
-							<h4>Beautiful Websites</h4>
-							<p>I design beautiful websites with a large emphasis for <strong>UX and UI design</strong>.</p>
+
+					<h2 style="text-align: center;">...Workshops...</h2>
+						<div>
+							<section class="left">
+								
+								<h4 class="">Cyber Hacking</h4>
+								<div class="">
+								Cyberx Securities offers Workshop-cum-Championship under the aegis of Infotsav'15.It will be a two days workshop covering as many as possible topics like Cyber Securtiy, Cryptography, Website hacking. Free tool kit will be given to all the participants along with a certificate from Cyberx Securities and will provide further assistance in career opportunities. Top 3 winners of the workshop will get Gift Vouchers. Registration fee is Rs. 900/-
+								<a href="#">Read more</a>
+								</div>
+								<br/><br/>
+								<h4 class="">Game Development</h4>
+								<div class="">
+								TechBharat Consulting offers its Workshop on Game Development under the aegis of Infotsav'15.It will be a two days workshop covering all the elements of Game Development.Registration fee is Rs.1000/-
+								<a href="#">Read more</a>
+								</div>
+								<br/><br/>
+								<h4 class="">How to built your own website</h4>
+								<div class="">
+								"You're committing to search for one of the rare ideas that generates rapid growth" - Paul Graham. An Entrepreneur starting a startup is committing to solve a harder type of problem than ordinary businesses do. For all those budding Entrepreneur we present our workshop on 'How To Build your own Startup'.Registration fee is Rs.600/- The workshop will be conducted by an eminent entrepreneur Ronak Dhoot - CTO & Co-founder Geek Shastra.
+								<a href="#">Read more</a>
+								</div>
+							</section>
+							<section class="right">
+								<center>
+								<br/><br/><br/>
+								<img src="images/ws1.jpg" class="ws1"><br/><br/>
+								<img src="images/ws2.png" class="ws2"><br/><br/><br/>
+								<img src="images/ws3.jpg" class="ws3">
+								</center>
+							</section>
 						</div>
-						<div id="sCode" class="box clearfix">
-							<div class="icon"></div>
-							<h4>Awesome Web Apps</h4>
-							<p>I enjoy developing web apps with great concepts. Clean code, Maintenance, Short schedules & Great results are the way I work.</p>
-						</div>
-						<div id="sThinking" class="box clearfix">
-							<div class="icon"></div>
-							<h4>Creative Direction</h4>
-							<p>If you have an idea for a new website or web app, I can help you expanding your idea and make it happen.</p>
-						</div>
-					</section>
-					<section id="skillsList">
-						<h3>How?</h3>
-						<ul>
-							<li>Photoshop</li>
-							<li>Illustrator</li>
-							<li>UX Touch</li>
-						</ul>
-						<ul>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>JavaScript, AngularJS, jQuery</li>
-							<li>Wordpress</li>
-							<li>PHP & MySQL</li>
-							<li>Ruby On Rails</li>
-						</ul>
-						<ul>
-							<li>Research</li>
-							<li>Out Of The Box Thinking</li>
-							<li>Innovation</li>
-							<li>Web Trends Analyzing</li>
-						</ul>
-					</section>
 					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
-		<div id="servicesSign" class="sign"><span>Services & Skills</span></div>
+		<div id="servicesSign" class="sign"><span>Workshops</span></div>
 		<div id="servicesHole" class="hole"></div>
 		
 		<!-- Stop Station 3 -->
