@@ -75,7 +75,7 @@
       railvalign:"bottom",
       enabletranslate3d:true,
       enablemousewheel:true,
-      enablekeyboard:true,
+      enablekeyboard:false,
       smoothscroll:true,
       sensitiverail:true,
       enablemouselockapi:true,
