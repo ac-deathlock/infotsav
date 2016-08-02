@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d0db3d7-19a6-443d-b75d-3b1101a1921e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Infotsav/scripts/jquery.nicescroll.js" afterPath="$PROJECT_DIR$/Infotsav/scripts/jquery.nicescroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Infotsav/index.html" afterPath="$PROJECT_DIR$/Infotsav/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Infotsav/scripts/game.js" afterPath="$PROJECT_DIR$/Infotsav/scripts/game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Infotsav/style.css" afterPath="$PROJECT_DIR$/Infotsav/style.css" />
     </list>
     <ignored path="Infotsav.iws" />
@@ -24,26 +25,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Infotsav/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9615384">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.33728814">
+              <caret line="404" column="146" selection-start-line="404" selection-start-column="146" selection-end-line="404" selection-end-column="146" />
               <folding>
-                <marker date="1470085008937" expanded="true" signature="1158:1202" placeholder="..." />
+                <marker date="1470122548677" expanded="true" signature="1158:1202" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.nicescroll.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jquery.nicescroll.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Infotsav/scripts/jquery.nicescroll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28084415">
+            <state vertical-scroll-proportion="0.0">
               <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Infotsav/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.153847">
+              <caret line="1152" column="3" selection-start-line="1152" selection-start-column="3" selection-end-line="1152" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,6 +68,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Infotsav/scripts/jquery.nicescroll.js" />
+        <option value="$PROJECT_DIR$/Infotsav/style.css" />
+        <option value="$PROJECT_DIR$/Infotsav/index.html" />
       </list>
     </option>
   </component>
@@ -160,7 +173,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -189,22 +202,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Infotsav/index.html">
+    <entry file="file://$PROJECT_DIR$/Infotsav/scripts/jquery.nicescroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9615384">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
           <folding>
-            <marker date="1470085008937" expanded="true" signature="1158:1202" placeholder="..." />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Infotsav/scripts/jquery.nicescroll.js">
+    <entry file="file://$PROJECT_DIR$/Infotsav/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28084415">
-          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+        <state vertical-scroll-proportion="-16.153847">
+          <caret line="1152" column="3" selection-start-line="1152" selection-start-column="3" selection-end-line="1152" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Infotsav/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33728814">
+          <caret line="404" column="146" selection-start-line="404" selection-start-column="146" selection-end-line="404" selection-end-column="146" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1470122548677" expanded="true" signature="1158:1202" placeholder="..." />
           </folding>
         </state>
       </provider>

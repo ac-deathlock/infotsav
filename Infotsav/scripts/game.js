@@ -93,38 +93,67 @@ Game.prototype = {
 					$(this).remove();
 				});
 			}
-			switch (event.keyCode) {
-				case 37: // Left					
-					me.moveX(me.leftPos - 5, 'left');
-					event.preventDefault();
-				break;
 
-				case 39: // Right
-					me.moveX(me.leftPos + 5, 'right');
-					event.preventDefault();
-				break;
+			if(event.ctrlKey)
+			{
+				switch(event.keyCode){
 
-				case 38: // Up
-					me.moveY(me.topPos - 5, 'up');
-					event.preventDefault();
-				break;
+					case 37: // Fast Left
+						me.moveX(me.leftPos - 12, 'left');
+						event.preventDefault();
+					break;
 
-				case 40: // Down
-					me.moveY(me.topPos + 5, 'down');
-					event.preventDefault();
-				break;
-				
-				case 13: 
-					if(me.topPos > $('#wrapper').height() - $('#endSea').height() - player.height()) {
-						$('nav a').removeClass('current');
-						$('nav a[href="#boat"]').addClass('current');
-						me.shipSail();
-					}
-				break;
-				
-				case 27: 					
-					me.hideNotificationBar();
-				break;
+					case 39: //Fast Right
+						me.moveX(me.leftPos + 12, 'right');
+						event.preventDefault();
+					break;
+
+					case 38: //Fast Up
+						me.moveY(me.topPos - 12, 'up', 12);
+						event.preventDefault();
+					break;
+
+					case 40: //Fast Down
+						me.moveY(me.topPos + 12, 'down', 12);
+						event.preventDefault();
+					break;
+				}
+			}
+			else
+			{
+				switch (event.keyCode) {
+					case 37: // Left					
+						me.moveX(me.leftPos - 5, 'left');
+						event.preventDefault();
+					break;
+
+					case 39: // Right
+						me.moveX(me.leftPos + 5, 'right');
+						event.preventDefault();
+					break;
+
+					case 38: // Up
+						me.moveY(me.topPos - 5, 'up', 5);
+						event.preventDefault();
+					break;
+
+					case 40: // Down
+						me.moveY(me.topPos + 5, 'down', 5);
+						event.preventDefault();
+					break;
+					
+					case 13: 
+						if(me.topPos > $('#wrapper').height() - $('#endSea').height() - player.height()) {
+							$('nav a').removeClass('current');
+							$('nav a[href="#boat"]').addClass('current');
+							me.shipSail();
+						}
+					break;
+					
+					case 27: 					
+						me.hideNotificationBar();
+					break;
+				}
 			}
 			me.openDoors(me.leftPos, me.topPos);
 			me.revealMenu(me.topPos);
@@ -232,16 +261,16 @@ Game.prototype = {
 		}
 	},
 	
-	moveY: function(y, dir) {
+	moveY: function(y, dir, speed) {
 		var player = this.player;
 		var canMove = this.canImove(null, y);	
 		if(canMove) {
 			if(this.topPos >= 200) {
 				if(dir == 'up') {
-					$('html, body').animate({scrollTop: $(document).scrollTop() - 5}, 10);
+					$('html, body').animate({scrollTop: $(document).scrollTop() - speed}, 10);
 				}
 				else {
-					$('html, body').animate({scrollTop: $(document).scrollTop() + 5}, 10);
+					$('html, body').animate({scrollTop: $(document).scrollTop() + speed}, 10);
 				}
 			}
 			this.topPos = y;
