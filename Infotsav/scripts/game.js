@@ -117,10 +117,14 @@ Game.prototype = {
 						me.moveY(me.topPos + 12, 'down', 12);
 						event.preventDefault();
 					break;
+
+					case 192:
+						document.getElementById('music').play();
 				}
 			}
 			else
 			{
+				console.log(event.keyCode);
 				switch (event.keyCode) {
 					case 37: // Left					
 						me.moveX(me.leftPos - 5, 'left');
@@ -140,6 +144,10 @@ Game.prototype = {
 					case 40: // Down
 						me.moveY(me.topPos + 5, 'down', 5);
 						event.preventDefault();
+					break;
+
+					case 192:
+						document.getElementById('music').pause();
 					break;
 					
 					case 13: 

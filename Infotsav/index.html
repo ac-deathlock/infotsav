@@ -49,7 +49,9 @@
 	
 </head>
 <body onload="startGame()">
-	
+	<audio autoplay="true" src="infotsavpokemon.mp3" loop="true" id="music">
+	<embed src="infotsavpokemon.mp3" hidden="true" loop="true" autostart="true" height="0" width="0" style="z-index: -99; display: ;"></embed>
+	</audio>
 	<!-- Facebook like -->
 	<!-- <div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -88,7 +90,7 @@
 			<li><a href="#sponsorsHouse">Sponsors</a></li>
 			<li><a href="#techHouse">Contact Us</a></li>
 			<li><a href="#abinfotsavHouse">About Us</a></li>
-			<!--<li><a href="#boat">See Something Amazing</a></li>-->
+			<!-- <li><a href="" onclick="document.getElementById('music').Pause">Pause Music</a></li> -->
 			<li class="last"><a href="#howToPlay">!!</a></li>
 		</ul>
 	</nav>
@@ -414,7 +416,9 @@
 					</div>
 					<div id="htpEsc" class="box clearfix">
 						<div class="icon"></div>
-						<p>Press the "Esc" key to leave buildings and close the notifications bar</p>
+						<p>Press the "Esc" key to leave buildings and close the notifications bar.<br/>
+						   Press '~' Key to Pause and 'Ctrl' + '~' to play the music.
+						</p>
 					</div>
 					<div id="htpShare" class="box clearfix">
 						<div class="icon"></div>
