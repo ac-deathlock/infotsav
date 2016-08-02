@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from danielsternlicht.com/playground/the-game-of-thrones/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 30 Jul 2016 19:46:36 GMT -->
+<head>
+    <title>The Game of Thrones | HTML5 Canvas Experiment by Daniel Sternlicht</title>	
+    <meta name="description" content="The Game of Thrones | HTML5 Canvas Experiment by Daniel Sternlicht">
+	<meta name="keywords" content="Daniel Sternlicht, Daniel, Sternlicht, CSS, HTML, jQuery, Front End Developer, CSS3, HTML5, Javascript, HTML5 Canvas, HTML5 Canvas Experiment, Web technology, Lunar Lockout, The game of thrones, Game of Thrones game">	
+	<meta property="og:image" content="shareImg.png" />
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />    
+    <link type="text/css" rel="stylesheet" href="css/style.css" /> 
+    <script src="js/jquery-1.6.3.min.js" type="text/javascript"></script>    
+    <script src="js/kinetic.min.js" type="text/javascript"></script>  
+    <script src="js/data.js" type="text/javascript"></script>  
+    <script src="js/game.js" type="text/javascript"></script>  
+    <!-- Google Analytics -->
+	<script type="text/javascript">
+
+	   var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-32487785-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body>
+	<!-- Facebook like -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "../../../connect.facebook.net/en_GB/all.js#xfbml=1&appId=317046021671732";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Google +1 -->
+	<script type="text/javascript">
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = '../../../apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+
+	<!-- Header -->
+	<header>
+		<a class="player" href="#"><span></span>Mute</a>
+		<nav>
+			<a href="#howToPlay">How To Play</a>
+			<a href="#about">About This Experiment</a>
+		</nav>
+	</header>
+
+	<!-- Game Canvas -->
+	<div id="wrapper">
+		<h1>The <strong>Game</strong> of Thrones</h1>
+		<h2>HTML5 Canvas Experiment by <a href="../../index.html">Daniel Sternlicht</a></h2>
+		<section>
+			<div id="board"></div>
+			<div id="levelInfo">
+				<h2>Great work!</h2>
+				<h3>
+					You have just finished Level <strong class="level">1</strong>
+					<br />In <strong class="step">0</strong> steps!
+				</h3>
+			</div>
+			<a class="next btn" href="#">&gt;</a>
+			<a class="prev btn disabled" href="#">&lt;</a>
+			<div id="levelStatus">Level: <strong>1</strong> / <span>0</span></div>
+			<a class="restart grayBtn" href="#">Restart Level</a>	
+			<div id="steps">Steps: <strong>0</strong></div>
+		</section>
+	</div>
+
+	<!-- Info Sections -->
+	<section id="howToPlay">
+		<h3>How to play</h3>
+		<h4>Goal:</h4>
+		<p>Your goal is to bring Khaleesi (The player marked with the red flag) to the Iron Throne</p>
+		<h4>Rules:</h4>
+		<ul>
+			<li>Travel over the board from square to square with any player you want by click it. Once you clicked it, you'll get the relevant movements options (Marked as gray squares).</li>
+			<li>You can only move forward, reverse, and side-to-side. No diagonal movement is allowed.</li>
+			<li>You can only move the players on the board if its movement can be blocked by another player.</li>
+			<li>A move is complete when you land on the board square next to the blocking player. They act like your brakes.</li>
+			<li>You win by getting Khaleesi to the Iron Throne (The block in the center).</li>
+		</ul>
+		<p>That's it, you're all set!</p>
+		<a href="#" class="close">Close</a>
+	</section>
+	<section id="about">
+		<h3>About this experiment</h3>
+		<p>This game is an HTML5 Canvas experiment designed and coded by <a href="../../index.html">Daniel Sternlicht</a>. It and was inpired by the greatest TV-show ever made - "<a href="http://www.imdb.com/title/tt0944947/" target="_blank">Game of Thrones</a>" (By HBO).</p>
+		<p>The game concept based on a thinking board game named "<a href="http://www.puzzles.com/products/lunarlockout/LunarLockoutStart.htm" target="_blank">Lunar Lockout</a>" which is very recommended. All rights reserved.</p>
+		<p>Enjoy! :)</p>
+		<a href="#" class="close">Close</a>
+	</section>
+
+	<!-- Share Buttons -->
+	<div id="share">
+		<div class="fb-like" data-href="http://danielsternlicht.com/playground/the-game-of-thrones/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false" data-font="lucida grande"></div>
+		<a href="https://twitter.com/share" data-url="http://danielsternlicht.com/playground/the-game-of-thrones/" data-count="vertical" data-via="dsternlicht" class="twitter-share-button">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<div class="g-plusone" data-size="tall" data-href="http://danielsternlicht.com/playground/the-game-of-thrones/"></div>
+	</div>
+
+	<!-- Audio Files -->
+	<audio id="move" preload="auto">
+		<source src="audio/move.mp3" />  
+		<source src="audio/move.ogg" />  
+	</audio>
+	<audio id="hooray" preload="auto">
+		<source src="audio/hooray.mp3" /> 
+		<source src="audio/hooray.ogg" />  
+	</audio>
+	<audio id="mainTheme" autoplay loop preload="auto">
+		<source src="audio/Game_of_Thrones_Theme.mp3" /> 
+		<source src="audio/Game_of_Thrones_Theme.ogg" />  
+	</audio>
+</body>
+
+<!-- Mirrored from danielsternlicht.com/playground/the-game-of-thrones/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 30 Jul 2016 19:47:45 GMT -->
+</html>
