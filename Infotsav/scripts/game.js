@@ -26,11 +26,7 @@ Game.prototype = {
 	},
 
 	howToPlay: function() {
-		var isFirstTime = localStorage.getItem('isYourFirstTime');
-		if(!isFirstTime) {
-			this.lightboxInit('#howToPlay', false);
-			localStorage.setItem('isYourFirstTime', false);	
-		}
+		this.lightboxInit('#howToPlay', false);
 	},
 
 	eventsHandler: function() {
@@ -99,42 +95,42 @@ Game.prototype = {
 				switch(event.keyCode){
 
 					case 37: // Fast Left
-						me.moveX(me.leftPos - 12, 'left');
+						me.moveX(me.leftPos - 19, 'left');
 						event.preventDefault();
 					break;
 
 					case 39: //Fast Right
-						me.moveX(me.leftPos + 12, 'right');
+						me.moveX(me.leftPos + 19, 'right');
 						event.preventDefault();
 					break;
 
 					case 38: //Fast Up
-						me.moveY(me.topPos - 12, 'up', 12);
+						me.moveY(me.topPos - 19, 'up', 19);
 						event.preventDefault();
 					break;
 
 					case 40: //Fast Down
-						me.moveY(me.topPos + 12, 'down', 12);
+						me.moveY(me.topPos + 19, 'down', 19);
 						event.preventDefault();
 					break;
 
 					case 65: // Left
-						me.moveX(me.leftPos - 12, 'left');
+						me.moveX(me.leftPos - 19, 'left');
 						event.preventDefault();
 						break;
 
 					case 68: // Right
-						me.moveX(me.leftPos + 12, 'right');
+						me.moveX(me.leftPos + 19, 'right');
 						event.preventDefault();
 						break;
 
 					case 87: // Up
-						me.moveY(me.topPos - 12, 'up', 12);
+						me.moveY(me.topPos - 19, 'up', 19);
 						event.preventDefault();
 						break;
 
 					case 83: // Down
-						me.moveY(me.topPos + 12, 'down', 12);
+						me.moveY(me.topPos + 19, 'down', 19);
 						event.preventDefault();
 						break;
 				}
@@ -144,42 +140,42 @@ Game.prototype = {
 				console.log(event.keyCode);
 				switch (event.keyCode) {
 					case 37: // Left					
-						me.moveX(me.leftPos - 5, 'left');
+						me.moveX(me.leftPos - 12, 'left');
 						event.preventDefault();
 					break;
 
 					case 39: // Right
-						me.moveX(me.leftPos + 5, 'right');
+						me.moveX(me.leftPos + 12, 'right');
 						event.preventDefault();
 					break;
 
 					case 38: // Up
-						me.moveY(me.topPos - 5, 'up', 6);
+						me.moveY(me.topPos - 12, 'up', 14);
 						event.preventDefault();
 					break;
 
 					case 40: // Down
-						me.moveY(me.topPos + 5, 'down', 6);
+						me.moveY(me.topPos + 12, 'down', 14);
 						event.preventDefault();
 					break;
 
 					case 65: // Left
-						me.moveX(me.leftPos - 5, 'left');
+						me.moveX(me.leftPos - 12, 'left');
 						event.preventDefault();
 						break;
 
 					case 68: // Right
-						me.moveX(me.leftPos + 5, 'right');
+						me.moveX(me.leftPos + 12, 'right');
 						event.preventDefault();
 						break;
 
 					case 87: // Up
-						me.moveY(me.topPos - 5, 'up', 5);
+						me.moveY(me.topPos - 12, 'up', 14);
 						event.preventDefault();
 						break;
 
 					case 83: // Down
-						me.moveY(me.topPos + 5, 'down', 5);
+						me.moveY(me.topPos + 12, 'down', 14);
 						event.preventDefault();
 						break;
 
@@ -336,7 +332,7 @@ Game.prototype = {
 		var player = this.player;
 		if(!player.hasClass(dir)) {
 			player.addClass(dir);
-			player.sprite({fps: 9, no_of_frames: 3}).spState(state);
+			player.sprite({fps: 16, no_of_frames: 4}).spState(state);
 		}				
 	},
 

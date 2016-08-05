@@ -782,52 +782,61 @@ nav li.last a:hover {
 .flowers.r3 {
 	top: 225px;
 	right: 65px;
-	background-position: -37.5px -74px;
+	background-position: -70px -174.5px;
 }
 
 .flowers.r4 {
 	top: 400px;
 	left: 80px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r5 {
 	top: 7000px;
 	right: 180px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r6 {
 	top: 870px;
 	left: 180px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r7 {
 	top: 1240px;
 	left: 280px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r8 {
 	top: 1030px;
 	right: 30px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r9 {
 	top: 1500px;
 	left: 30px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r10 {
 	top: 1600px;
 	right: 100px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r11 {
 	top: 1670px;
 	left: 140px;
+	background-position: -37.5px -74px;
 }
 
 .flowers.r12 {
 	top: 1900px;
 	right: 210px;
+	background-position: -37.5px -74px;
 }
 
 /* Houses */
@@ -1187,9 +1196,9 @@ nav li.last a:hover {
 
 #lightbox #closeLB {
 	position: absolute;
-	right: 10px;
+	right: 60px;
 	top: 10px;
-	font: 11px/14px 'SilkscreenBold', Arial, sans-serif;
+	font: 20px/24px 'SilkscreenBold', Arial, sans-serif;
 	z-index: 910;
 	color: #222;
 	text-shadow: 0 0 3px rgba(255,255,255,0.8);
@@ -1299,6 +1308,10 @@ nav li.last a:hover {
 	max-height: 600px;
 	overflow-y: scroll;
 	width: 884px;
+}
+
+#lightbox a{
+	color: #fff;
 }
 
 /*#lightbox .services section {
@@ -1434,10 +1447,11 @@ nav li.last a:hover {
 
 #lightbox .portfolioBox {
 	float: left;
-	width: 25%;
+	width: 30%;
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	margin-left: 2.5%;
 }
 
 #lightbox .shelf {
@@ -1463,7 +1477,7 @@ nav li.last a:hover {
 
 #lightbox .portfolioBox h4 {
 	font-size: 16px;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.6);
+	text-shadow: 2px 3px 2px rgba(0,0,0,0.6);
 }
 
 #lightbox .portfolioBox .portfolioImg {
@@ -1474,7 +1488,7 @@ nav li.last a:hover {
 	border: 1px solid #e7e7e7;
 	border-radius: 50em;
 	background: #fff;
-	margin: 0 auto 10px;
+	margin: 0 auto 0px;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
 	position: relative;
 	-webkit-transition: all 0.5s ease 0s;
@@ -1734,4 +1748,28 @@ body.ie {
 
 #howToPlay {
 	display: none;
+}
+
+.imgRounded
+{
+	border-radius: 50%;
+}
+
+.sponsorPic
+{
+	margin: 5%;
+	box-shadow: rgba(0,0,0,.65) 3px 2px 3px 5px;
+}
+
+#lightbox .sponsors
+{
+	max-height: 600px;
+	overflow-y: auto;
+	width: 1000px;
+}
+
+#asSponsors img
+{
+	width: 30%;
+	margin-left: 2%;
 }
